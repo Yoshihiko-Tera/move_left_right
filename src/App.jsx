@@ -54,11 +54,10 @@ function App() {
       <>
         <TopMenu onSelectMode={handleSelectMode} />
         {/* Settings button on TopMenu if desired */}
-        <button 
-          className="settings-btn" 
+        <button
+          className="settings-btn app-nav-btn app-nav-btn--settings"
           onClick={() => setIsSettingsOpen(true)}
-          aria-label="Settings"
-          style={{ position: 'absolute', top: '2vh', right: '2vw', zIndex: 100 }}
+          aria-label="設定を開く"
         >
           <Settings size={40} color="#222" />
         </button>
@@ -82,20 +81,19 @@ function App() {
       )}
 
       {/* Global Settings Button */}
-      <button 
-        className="settings-btn" 
+      <button
+        className="settings-btn app-nav-btn app-nav-btn--settings"
         onClick={() => setIsSettingsOpen(true)}
-        aria-label="Settings"
+        aria-label="設定を開く"
       >
         <Settings size={40} />
       </button>
 
       {/* Home Button */}
-      <button 
-        className="settings-btn" 
-        style={{ right: 'calc(2vw + 60px)', zIndex: 100 }}
+      <button
+        className="settings-btn app-nav-btn app-nav-btn--home"
         onClick={() => setCurrentScreen('menu')}
-        aria-label="Home"
+        aria-label="トップに戻る"
       >
         <Home size={40} />
       </button>

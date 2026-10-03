@@ -71,6 +71,26 @@ body {
   transform: rotate(30deg);
 }
 
+/* Keep the global controls above every full-screen mode. */
+.app-nav-btn {
+  position: fixed;
+  top: max(2vh, env(safe-area-inset-top));
+  z-index: 500;
+  width: 56px;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.app-nav-btn--settings {
+  right: max(2vw, env(safe-area-inset-right));
+}
+
+.app-nav-btn--home {
+  right: calc(max(2vw, env(safe-area-inset-right)) + 68px);
+}
+
 /* Center Display Area */
 .center-area {
   flex: 1;
