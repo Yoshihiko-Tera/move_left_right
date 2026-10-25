@@ -344,7 +344,8 @@ export default function SettingsModal({ currentSettings, onSave, onClose }) {
           </>
         )}
 
-        <div className="modal-actions">
+        <p style={{marginTop:24,textAlign:"right",fontSize:14}}><a href="/about.html" style={{color:"#666",textDecoration:"underline",textUnderlineOffset:4,padding:"8px 0",display:"inline-block"}}>使い方・アプリについて</a></p>
+<div className="modal-actions">
           <button className="btn btn-primary" onClick={handleSave}>保存して閉じる</button>
         </div>
       </div>
